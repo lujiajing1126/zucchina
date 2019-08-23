@@ -1,0 +1,8 @@
+node_modules/
+built/
+*.log
+*.tar.gz
+.DS_Store
+*.conf
+*.toml
+.vscode
