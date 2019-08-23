@@ -27,7 +27,7 @@ function splitKV(input: string): [string, string] {
     return [input.substring(0, idx).trim(), input.substring(idx + 1, input.length).trim()];
 }
 
-function base58Encode(input: string, encoding = "utf-8"): string {
+function base58Encode(input: string, encoding: BufferEncoding = "utf-8"): string {
     const bytes = Buffer.from(input, encoding);
     return bs58.encode(bytes);
 }
